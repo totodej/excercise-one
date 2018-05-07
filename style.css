@@ -1,0 +1,68 @@
+body {
+	background-color : black; 
+}
+
+#bloc {
+	text-align : center;
+	background-color : white;
+	margin-right : 24%;
+	margin-left : 23%;
+	margin-top : 11%;
+	padding-top : 4%;
+	padding-bottom : 3%;
+}
+
+
+h1 {
+	font-family : 'Roboto', sans-serif; 
+	font-size : 59px;
+	margin-bottom : -3%;
+	margin-top: 2%;
+}
+
+h3 {
+	font-family : 'Open Sans', sans-serif;
+	font-size : 28px;
+}
+
+input {
+	width : 76%;
+	border-radius : 9px; 
+	height : 50px;
+}
+
+input::placeholder {
+	text-align : center;
+	font-family : 'Open Sans', sans-serif;
+	font-style : italic;
+	font-size : 20px;
+}
+
+button {
+	background-color : #00852c;
+	color : white;
+	width : 77%;
+	border-radius : 9px; 
+	height : 60px;
+	margin-top : 8px;
+	margin-bottom : 20px; 
+	font-weight : bold;
+	font-size : 26px; 
+}
+
+a {
+	font-family : 'Open Sans', sans-serif;
+	font-style : italic;
+	color : black;
+	text-decoration :dashed underline ;
+	font-size : 20px;
+}
+
+
+@media only screen and (max-width: 600px) {
+  button {
+  	font-size : 20px;
+  }
+}
+
+
