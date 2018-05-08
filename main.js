@@ -33,6 +33,8 @@ function myFunction(){
 
 }
 
+///////////////////////////////////////////////////////////////////////////
+
 document.getElementById("link").addEventListener("click", deleteBlocFunction);
 document.getElementById("cross").addEventListener("click", deleteBlocFunction);
 
@@ -41,6 +43,30 @@ function deleteBlocFunction(){
 	document.getElementById("bloc").style.display = "none";
 
 }
+
+///////////////////////////////////////////////////////////////////////////
+
+setTimeout(function() {
+
+document.getElementById("bloc").style.display = "block";
+
+},3000);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
