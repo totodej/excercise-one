@@ -25,7 +25,7 @@ function myFunction(){
    else
    {
 
-      var error = document.getElementById("error").innerHTML = "<h4>" + "You need put your address email" + "</h4>";
+      var error = document.getElementById("error").innerHTML = "<h4><i>" + "<i class='fas fa-times'></i> " + "You need to put your address email, please" + "</i></h4>";
       document.getElementById("error").style.color = "red";
 
       return false;
@@ -52,7 +52,7 @@ document.getElementById("bloc").style.display = "block";
 
 },3000);
 
-
+//////////////////////////////////////////////////////////////////////////
 
 
 
