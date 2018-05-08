@@ -2,6 +2,13 @@ body {
 	background-color : black; 
 }
 
+#cross {
+	position: absolute;
+	right: 0;
+	top: 0;
+	font-size: 25px;
+}
+
 #bloc {
 	text-align : center;
 	background-color : white;
@@ -10,6 +17,7 @@ body {
 	margin-top : 11%;
 	padding-top : 4%;
 	padding-bottom : 3%;
+	position : relative;
 }
 
 
@@ -59,10 +67,29 @@ a {
 }
 
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 1000px) {
   button {
   	font-size : 20px;
   }
+
+  h1 {
+  	font-size: 45px;
+  	padding: 20px;
+  	margin-bottom : -40px; 
+  }
+
+  h3 {
+  	padding: 20px;
+  	margin-bottom : -1px; 
+  }
+
+  a {
+  	font-size: 20px;
+  	padding: 10px;
+  	line-height: 10px;
+  }
 }
+
+
 
 
