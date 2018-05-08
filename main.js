@@ -24,7 +24,9 @@ function myFunction(){
    }
    else
    {
-      alert("You need put your address email");
+
+      var error = document.getElementById("error").innerHTML = "<h4>" + "You need put your address email" + "</h4>";
+      document.getElementById("error").style.color = "red";
 
       return false;
    }
@@ -39,6 +41,7 @@ function deleteBlocFunction(){
 	document.getElementById("bloc").style.display = "none";
 
 }
+
 
 
 
