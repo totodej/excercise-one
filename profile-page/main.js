@@ -70,35 +70,35 @@ window.onload = function(){
 			fieldLocation.style.display = "block";
 			fieldLocation.style.color = "red";
 			fieldLocation.innerHTML = 'Complete the field "Location"';
-			fieldLocation.style.marginLeft = "134px";
+			document.getElementById("marginLoc").style.marginTop = "20px";
 		}
 
 		if(website.value ===""){
 			fieldWebsite.style.display = "block";
 			fieldWebsite.style.color = "red";
 			fieldWebsite.innerHTML = 'Complete the field "Website"';
-			fieldWebsite.style.marginLeft = "134px";
+			document.getElementById("marginWeb").style.marginTop = "17px";
 		}
 
 		if(github.value === ""){
 			fieldGithub.style.display = "block";
 			fieldGithub.style.color = "red";
 			fieldGithub.innerHTML = 'Complete the field "Github"';
-			fieldGithub.style.marginLeft = "134px";
+			document.getElementById("marginGit").style.marginTop = "17px";
 		}
 
 		if(linkedin.value === ""){
 			fieldLinkedin.style.display = "block";
 			fieldLinkedin.style.color = "red";
 			fieldLinkedin.innerHTML = 'Complete the field "Linkedin"';
-			fieldLinkedin.style.marginLeft = "134px";
+			document.getElementById("marginLink").style.marginTop = "17px";
 		}
 
 		if(twitter.value === ""){
 			fieldTwitter.style.display = "block";
 			fieldTwitter.style.color = "red";
 			fieldTwitter.innerHTML = 'Complete the field "Twitter"';
-			fieldTwitter.style.marginLeft = "134px";
+			document.getElementById("marginTwi").style.marginTop = "17px";
 		}
 		
 		if(name1.value === "" || message.value === "" || location.value === "" || website.value ==="" || github.value === "" || linkedin.value === "" || twitter.value === ""){

@@ -3,6 +3,13 @@ body {
 	background-color: #f5f5f5;
 }
 
+#form {
+	margin-left: 400px;
+    margin-top: 65px;
+}
+
+/*********** IMAGE & NAME & TEXTAREA ***********/
+
 img {
 	width : 226px;
 	height : 226px;
@@ -10,58 +17,6 @@ img {
 	border: 1px ridge grey;
 	padding: 5px;
 	background-color: white;
-}
-
-#form {
-	display : flex;
-	margin-left: 400px;
-    margin-top: 65px;
-}
-
-label {
-	padding-top : 2px;
-	font-size : 22px;
-	font-family : 'Roboto', sans-serif;
-}
-
-.fas {
-	color: #a09f8d;
-}
-
-.fab {
-	color: #a09f8d;
-}
-
-input {
-	display : block;
-	width: 250px;
-	height: 25px;
-	margin-bottom: 23px;
-}
-
-#location {
-	margin-left: 26px;
-}
-
-#website {
-	margin-left: 27px;
-}
-
-#github {
-	margin-left: 42px;
-}
-
-#linkedin {
-	margin-left: 26px;
-}
-
-#twitter {
-	margin-left: 40px;
-}
-
-::placeholder {
-	font-family : 'Roboto', sans-serif;
-	font-size: 15px;
 }
 
 textarea {
@@ -72,12 +27,51 @@ textarea {
 	font-size : 15px;
 	font-family : 'Roboto', sans-serif;
 	margin-bottom: 23px;
-
 }
 
-#div {
+/*********** INPUTS ***********/
+
+.fieldsFlex {
 	display : flex;
 }
+
+label {
+	padding : 14px;
+	font-size : 22px;
+	font-family : 'Roboto', sans-serif;
+	display : block;
+	margin-left: 260px;
+}
+
+.fas {
+	color: #a09f8d;
+}
+
+.fab {
+	color: #a09f8d;
+}
+
+.inputs {
+	margin-left: 25px;
+}
+
+input {
+	display : block;
+	width: 250px;
+	height: 25px;
+	margin-bottom: 23px;
+}
+
+.inputs {
+	margin-top: 8px ;
+}
+
+::placeholder {
+	font-family : 'Roboto', sans-serif;
+	font-size: 15px;
+}
+
+/*********** BUTTONS ***********/
 
 #save {
 	background-color: #00d23e;
@@ -87,6 +81,7 @@ textarea {
     border-radius: 5px;
     font-size : 15px;
     font-family : 'Roboto', sans-serif;
+    margin-left: 270px;
 }
 
 #cancel {
