@@ -116,8 +116,6 @@ window.onload = function(){
 		return true;
 	}
 
-
-
 	function refresh(){
 
 		window.location.reload(false);
@@ -125,12 +123,6 @@ window.onload = function(){
 		localStorage.removeItem("Profile-Form");
 
 	}
-
-
-
-
-
-
 
 
 }
