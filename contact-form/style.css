@@ -1,0 +1,263 @@
+body {
+	background-color: #ff4757;
+}
+
+section {
+	width: 700px;
+	margin: 150px auto;
+	display: flex;
+	height: 600px;
+}
+
+#success{
+	display : none;
+}
+
+#bloc {
+	border-radius: 10px 10px 10px 10px;
+}
+
+#describe {
+	background-color: #ffd800;
+	border-top-left-radius: 10px 10px;
+	border-bottom-left-radius: 10px 10px;
+	padding: 50px;
+}
+
+#describe p{
+	font-family: 'Open Sans', sans-serif;
+	font-size: 13px;
+	font-style: italic;
+}
+
+.fa-envelope {
+	font-size: 40px;
+	margin-bottom: 50px;
+	color: white;
+}
+
+p:nth-of-type(2) {
+	margin-bottom: 84px;
+}
+
+h1 {
+	font-family: 'Open Sans', sans-serif;
+	margin-bottom: 20px;
+}
+
+#blocForm {
+	background-color: white;
+	border-top-right-radius: 10px 10px;
+	border-bottom-right-radius: 10px 10px;
+	padding: 50px;
+}
+
+#contactReasons {
+	margin-bottom: 15px;
+}
+
+#contactReasons {
+	width : 165px;
+	height: 25px;
+}
+
+#divMessage textarea {
+	width: 380px;
+	height: 100px;
+	border-radius: 6px;
+	margin-bottom: 15px;
+	background-color: #f2f4f4;
+	border-color : grey;
+}
+
+#nameMail {
+	display : flex;
+}
+
+#nameMail input {
+	border-radius: 6px;
+	background-color: #f2f4f4;
+	height: 25px;
+	width : 159px; 
+}
+
+#divName input {
+	margin-right: 52px;	
+}
+
+#divSubject input{
+	border-radius: 6px;
+	height: 25px;
+	width : 159px;
+	background-color: #f2f4f4;
+	margin-bottom: 15px;
+}
+
+
+button {
+	width : 165px;
+	height: 50px;
+	border-radius: 6px;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: bold;
+	font-size: 17px;
+	margin-top : 30px;
+}
+
+button:nth-of-type(1) {
+	background-color: white;
+	color : #ff4757;
+	margin-right: 52px;
+}
+
+button:nth-of-type(2) {
+	background-color: #ff4757;
+	color : white;
+}
+
+label {
+	font-family: 'Open Sans', sans-serif;
+	font-size: 10px;
+	color : grey;
+}
+
+@media only screen and (min-width: 650px) and (max-width: 900px) {
+
+	section {
+		width: 600px;
+		height: 580px;
+		margin : 150px auto;
+	}
+
+	#blocForm {
+    	padding: 30px;
+	}
+
+	#divMessage textarea {
+    	width: 190px;
+	}
+
+	#nameMail input {
+    	width: 159px;
+	}
+
+	button {
+    	width: 164px;
+    	height: 50px;
+    	margin-top: 30px;
+	}
+
+	button:nth-of-type(1) {
+    	margin-right: 41px;
+	}
+
+	p {
+		margin-bottom: -18px;	
+	}
+    
+	p:nth-of-type(2) {
+    	margin-bottom: 84px;
+	}
+
+	#divMessage textarea {
+    	width: 368px;
+	}
+
+	#divName input {
+    	margin-right: 43px; 
+	}
+
+	#describe {
+    	padding: 33px;
+    	width: 175px;
+	}
+
+}
+
+@media only screen and (min-width: 400px) and (max-width:650px) {
+
+	body{
+		margin: 0px;
+	}
+
+	section {
+		width:100%;
+		margin : auto;
+		display: block;
+	}
+
+	#describe{
+		border-radius: 0px;
+		padding: 10px;
+	}
+
+	#blocForm {
+		border-radius: 0px;
+    	padding: 10px;
+	}
+
+	#nameMail {
+    	display: block;
+	}
+
+	#contactReasons {
+		width : 100%;
+	}
+
+	#divMessage textarea {
+    	width: 190px;
+	}
+
+	#nameMail input {
+    	width: 190px;
+	}
+
+	h1 {
+		margin-bottom: 5px;
+		margin-top: 5px;
+	}
+
+	button {
+    	width: 100%;
+    	height: 30px;
+    	margin-top: 10px;
+	}
+
+	button:nth-of-type(1) {
+    	margin-right: 0px;
+	}
+
+	button:nth-of-type(2) {
+    	margin-bottom: 10px;
+	}
+
+	p {
+		margin-bottom: -44px;
+	}
+
+	p:nth-of-type(2) {
+    	margin-bottom: 15px;
+	}
+
+	p:nth-of-type(3) {
+    	margin-bottom: 5px;
+	}
+
+	#divMessage textarea {
+    	margin-bottom: 0px; 
+    	width: 100%;
+	}
+
+	#divName input {
+    	width: 100%;
+	}
+
+	#divMail input {
+		width: 100%;
+	}
+
+	#divSubject input {
+		width : 100%;
+	}
+
+}

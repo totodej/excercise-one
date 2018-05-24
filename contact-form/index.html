@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Contact-form</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:800" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.12/css/all.css" integrity="sha384-G0fIWCsCzJIMAVNQPfjH08cyYaUtMwjJwqiRKxxE/rx96Uroj1BtIQ6MLJuheaO9" crossorigin="anonymous">
+</head>
+
+<body>    
+
+    <section id="bloc">
+        <h1 id="success">Thank you for completing the form</h1>
+        <div id="describe">
+            <p><i class="far fa-envelope"></i></p>
+            <p>Please describe your product idea in a nutshell</p>
+            <p>We need your email to reach you back</p>
+        </div>
+        <div id="blocForm">
+            <h1>Hire Us</h1>
+            <form id="form" name="form">
+
+                
+                <div id="divSubject">
+                    <span id="missFieldSubject"></span>
+                    <label>Subject</label>
+                    <br> 
+                    <input type="text" name="subject" id="subject">   
+                </div>
+
+                <div id="divContactReasons">
+                    <label>Contact Reasons</label>
+                    <br>
+                    <select name="contactReasons" id="contactReasons">
+                        <option>Contact</option>
+                        <option>Support</option>
+                        <option>Price</option>
+                    </select>
+                </div>
+
+                <div id="divMessage">
+                	<span id="missFieldMessage"></span>
+                    <label>Message</label>
+                    <br>
+                    <textarea name="message" id="message"></textarea>  
+                </div>
+                
+                <div id="nameMail">
+                    <div id=divName>
+                        <label>Your Name</label>
+                        <br>
+                        <input type="text" name="name" id="name">
+                        <br>
+                        <span id="missFieldName"></span>
+                    </div>
+                    
+                    <div id="divMail">
+                        <label>Your Email</label>
+                        <br>
+                        <input type="email" name="email" id="email">
+                        <span id="missFieldMail"></span>
+                    </div>   
+                </div>
+                <button type="reset" id="cancel">Cancel</button>
+                <button type="submit" id="send">Send</button>
+            </form>
+        </div>
+    </section>
+    <script src="main.js"></script>
+</body>
+
+</html>
