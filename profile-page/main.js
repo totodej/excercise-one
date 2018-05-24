@@ -31,15 +31,6 @@ window.onload = function(){
 			twitter: ""
 		};
 
-
-	fieldName.style.display = "none";
-	fieldMessage.style.display = "none";
-	fieldLocation.style.display = "none";
-	fieldWebsite.style.display = "none";
-	fieldGithub.style.display = "none";
-	fieldLinkedin.style.display = "none";
-	fieldTwitter.style.display = "none";
-
 	function validation(event){
 
 		event.preventDefault();
@@ -52,12 +43,16 @@ window.onload = function(){
 		profileForm.linkedin = linkedin.value;
 		profileForm.twitter = twitter.value;
 
+		fieldName.style.display = "none";
+
 		if(name1.value === ""){
 			fieldName.style.display = "block";
 			fieldName.style.color = "red";
 			fieldName.innerHTML = 'Complete the field "Name"';
 			name1.style.marginTop = "0px";
 		}
+
+		fieldMessage.style.display = "none";
 
 		if(message.value === ""){
 			fieldMessage.style.display = "block";
@@ -66,12 +61,16 @@ window.onload = function(){
 			message.style.marginTop = "0px";
 		}
 
+		fieldLocation.style.display = "none";
+
 		if(location.value === ""){
 			fieldLocation.style.display = "block";
 			fieldLocation.style.color = "red";
 			fieldLocation.innerHTML = 'Complete the field "Location"';
 			document.getElementById("marginLoc").style.marginTop = "20px";
 		}
+
+		fieldWebsite.style.display = "none";
 
 		if(website.value ===""){
 			fieldWebsite.style.display = "block";
@@ -80,6 +79,8 @@ window.onload = function(){
 			document.getElementById("marginWeb").style.marginTop = "17px";
 		}
 
+		fieldGithub.style.display = "none";
+
 		if(github.value === ""){
 			fieldGithub.style.display = "block";
 			fieldGithub.style.color = "red";
@@ -87,12 +88,16 @@ window.onload = function(){
 			document.getElementById("marginGit").style.marginTop = "17px";
 		}
 
+		fieldLinkedin.style.display = "none";
+
 		if(linkedin.value === ""){
 			fieldLinkedin.style.display = "block";
 			fieldLinkedin.style.color = "red";
 			fieldLinkedin.innerHTML = 'Complete the field "Linkedin"';
 			document.getElementById("marginLink").style.marginTop = "17px";
 		}
+
+		fieldTwitter.style.display = "none";
 
 		if(twitter.value === ""){
 			fieldTwitter.style.display = "block";
