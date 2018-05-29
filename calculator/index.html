@@ -3,6 +3,8 @@
 	<head>
 		<title>Calculator</title>
 		<link rel="stylesheet" type="text/css" href="style.css">
+		<link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
 
 	</head>
 	<body>
@@ -16,8 +18,14 @@
 			<form id="form">
 
 				<div class="inputs">
-					<input type="text" name="firstInput" id="firstInput" placeholder="First Number">
-					<input type="text" name="secondInput" id="secondInput" placeholder="Second Number">
+					<div>
+						<input type="text" name="firstInput" id="firstInput" placeholder="First Number">
+						<span id="missFirstField"></span>
+					</div>
+					<div>
+						<input type="text" name="secondInput" id="secondInput" placeholder="Second Number">
+						<span id="missSecondField"></span>
+					</div>
 				</div>
 
 				<div class="buttons">
