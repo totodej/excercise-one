@@ -113,6 +113,8 @@ window.onload = function(){
 
 		localStorage.setItem("Profile-Form",JSON.stringify(profileForm));
 
+		document.getElementById("form").style.display = "none";
+
 		return true;
 	}
 
