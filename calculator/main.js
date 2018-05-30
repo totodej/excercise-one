@@ -53,7 +53,7 @@ function plusFunction(){
 	var plusResult = Number(firstInput.value) + Number(secondInput.value);
 	document.getElementById("display").innerHTML = plusResult;
 	localStorage.setItem("Result", JSON.stringify(Number(firstInput.value) + " + " + Number(secondInput.value) + " = " + plusResult));
-	document.getElementById("historyOperations").innerHTML += localStorage.getItem("Result") + "<br>" ;
+	document.getElementById("operationsHistory").innerHTML += localStorage.getItem("Result") + "<br>" ;
 };
 
 
@@ -64,7 +64,7 @@ function minusFunction(){
 	var minusResult = Number(firstInput.value) - Number(secondInput.value);
 	document.getElementById("display").innerHTML = minusResult;
 	localStorage.setItem("Result", JSON.stringify(Number(firstInput.value) + " - " + Number(secondInput.value) + " = " + minusResult));
-	document.getElementById("historyOperations").innerHTML += localStorage.getItem("Result") + "<br>" ;
+	document.getElementById("operationsHistory").innerHTML += localStorage.getItem("Result") + "<br>" ;
 
 };
 
@@ -76,7 +76,7 @@ function multiplyFunction(){
 	var multiplyResult = Number(firstInput.value) * Number(secondInput.value);
 	document.getElementById("display").innerHTML = multiplyResult;
 	localStorage.setItem("Result", JSON.stringify(Number(firstInput.value) + " * " + Number(secondInput.value) + " = " + multiplyResult));	
-	document.getElementById("historyOperations").innerHTML += localStorage.getItem("Result") + "<br>" ;
+	document.getElementById("operationsHistory").innerHTML += localStorage.getItem("Result") + "<br>" ;
 
 };
 
@@ -88,11 +88,17 @@ function divideFunction(){
 	var divideResult = Number(firstInput.value) / Number(secondInput.value);
 	document.getElementById("display").innerHTML = divideResult;
 	localStorage.setItem("Result", JSON.stringify(Number(firstInput.value) + " / " + Number(secondInput.value) + " = " + divideResult));
-	document.getElementById("historyOperations").innerHTML += localStorage.getItem("Result") + "<br>" ;
+	document.getElementById("operationsHistory").innerHTML += localStorage.getItem("Result") + "<br>" ;
 };
 
+document.getElementById("clear").addEventListener("click", clear);
 
+function clear(){
 
+	window.location.reload(false);
+
+	localStorage.removeItem("Result");
+}
 
 
 

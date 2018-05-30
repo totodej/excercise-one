@@ -42,7 +42,7 @@ h1 {
 	font-family: 'Press Start 2P', cursive;
 }
 
-#historyOperations{
+#operationsHistory{
 	padding: 15px;
 	width: 300px;
 	height: auto;
@@ -71,7 +71,7 @@ h1 {
 	display: flex;
 }
 
-.buttons button {
+button {
 	margin: 5px;
 	padding: 5px;
 	width: 40px;
@@ -79,7 +79,14 @@ h1 {
 	margin-left: 25px;
 	background-color: #dfe4ea;
 	font-weight: bold;
-	font-size: 20px
+	font-size: 20px;
+}
+
+#clear {
+	font-size: 20px;
+	margin-left: 125px;
+	padding: 5px;
+	width: 85px;
 }
 
 span {
