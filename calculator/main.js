@@ -11,6 +11,10 @@ var minus = document.getElementById("minus");
 var multiply = document.getElementById("multiply");
 var divide = document.getElementById("divide");
 
+var date = new Date();
+
+/******************** VALIDATION ********************/
+
 document.getElementById("form").addEventListener("submit", validation);
 
 function validation(event){
@@ -45,6 +49,7 @@ function validation(event){
 		return true;
 };
 
+/******************** OPERATIONS ********************/
 
 document.getElementById("plus").addEventListener("click", plusFunction);
 
@@ -53,7 +58,7 @@ function plusFunction(){
 	var plusResult = Number(firstInput.value) + Number(secondInput.value);
 	document.getElementById("display").innerHTML = plusResult;
 	localStorage.setItem("Result", JSON.stringify(Number(firstInput.value) + " + " + Number(secondInput.value) + " = " + plusResult));
-	document.getElementById("operationsHistory").innerHTML += localStorage.getItem("Result") + "<br>" ;
+	document.getElementById("operationsHistory").innerHTML += "<br>" + localStorage.getItem("Result") + "<br>" + date.toLocaleDateString() + " - " + date.toLocaleTimeString() + "<br><br>" ;
 };
 
 
@@ -64,7 +69,7 @@ function minusFunction(){
 	var minusResult = Number(firstInput.value) - Number(secondInput.value);
 	document.getElementById("display").innerHTML = minusResult;
 	localStorage.setItem("Result", JSON.stringify(Number(firstInput.value) + " - " + Number(secondInput.value) + " = " + minusResult));
-	document.getElementById("operationsHistory").innerHTML += localStorage.getItem("Result") + "<br>" ;
+	document.getElementById("operationsHistory").innerHTML +=  "<br>" + localStorage.getItem("Result") + "<br>" + date.toLocaleDateString() + " - " + date.toLocaleTimeString() + "<br><br>" ;
 
 };
 
@@ -76,7 +81,7 @@ function multiplyFunction(){
 	var multiplyResult = Number(firstInput.value) * Number(secondInput.value);
 	document.getElementById("display").innerHTML = multiplyResult;
 	localStorage.setItem("Result", JSON.stringify(Number(firstInput.value) + " * " + Number(secondInput.value) + " = " + multiplyResult));	
-	document.getElementById("operationsHistory").innerHTML += localStorage.getItem("Result") + "<br>" ;
+	document.getElementById("operationsHistory").innerHTML +=  "<br>" + localStorage.getItem("Result") + "<br>" + date.toLocaleDateString() + " - " + date.toLocaleTimeString() + "<br><br>" ;
 
 };
 
@@ -88,17 +93,21 @@ function divideFunction(){
 	var divideResult = Number(firstInput.value) / Number(secondInput.value);
 	document.getElementById("display").innerHTML = divideResult;
 	localStorage.setItem("Result", JSON.stringify(Number(firstInput.value) + " / " + Number(secondInput.value) + " = " + divideResult));
-	document.getElementById("operationsHistory").innerHTML += localStorage.getItem("Result") + "<br>" ;
+	document.getElementById("operationsHistory").innerHTML +=  "<br>" + localStorage.getItem("Result") + "<br>" + date.toLocaleDateString() + " - " + date.toLocaleTimeString() + "<br><br>" ;
 };
+
+/******************** CLEAR ********************/
 
 document.getElementById("clear").addEventListener("click", clear);
 
 function clear(){
 
 	window.location.reload(false);
-
 	localStorage.removeItem("Result");
 }
+
+
+
 
 
 
