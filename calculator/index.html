@@ -11,33 +11,43 @@
 
 		<h1>Calculator</h1>
 
-		<div class="bloc">
+		<div class="twoBlocs">
+			<div class="bloc">
 
-			<div id="display"></div>
+				<div id="display"></div>
 
-			<form id="form">
+				<form id="form">
 
-				<div class="inputs">
-					<div>
-						<input type="text" name="firstInput" id="firstInput" placeholder="First Number">
-						<span id="missFirstField"></span>
+					<div class="inputs">
+						<div>
+							<input type="text" name="firstInput" id="firstInput" placeholder="First Number">
+							<span id="missFirstField"></span>
+						</div>
+						<div>
+							<input type="text" name="secondInput" id="secondInput" placeholder="Second Number">
+							<span id="missSecondField"></span>
+						</div>
 					</div>
-					<div>
-						<input type="text" name="secondInput" id="secondInput" placeholder="Second Number">
-						<span id="missSecondField"></span>
+
+					<div class="buttons">
+						<button id="plus">+</button>
+						<button id="minus">-</button>
+						<button id="multiply">*</button>
+						<button id="divide">/</button>
 					</div>
+
+				</form>
+
+			</div>
+			<div class="bloc">
+
+				<div id="historyOperations">
+					<p>History Operations : </p>
 				</div>
 
-				<div class="buttons">
-					<button id="plus">+</button>
-					<button id="minus">-</button>
-					<button id="multiply">*</button>
-					<button id="divide">/</button>
-				</div>
+			</div>
 
-			</form>
 		</div>
-
 
 	<script src="main.js"></script>
 	</body>

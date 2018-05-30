@@ -13,7 +13,6 @@ var divide = document.getElementById("divide");
 
 document.getElementById("form").addEventListener("submit", validation);
 
-
 function validation(event){
 
 	event.preventDefault();
@@ -53,7 +52,8 @@ function plusFunction(){
 
 	var plusResult = Number(firstInput.value) + Number(secondInput.value);
 	document.getElementById("display").innerHTML = plusResult;
-	console.log(typeof plusResult);
+	localStorage.setItem("Result", JSON.stringify(Number(firstInput.value) + " + " + Number(secondInput.value) + " = " + plusResult));
+	document.getElementById("historyOperations").innerHTML += localStorage.getItem("Result") + "<br>" ;
 };
 
 
@@ -63,6 +63,9 @@ function minusFunction(){
 
 	var minusResult = Number(firstInput.value) - Number(secondInput.value);
 	document.getElementById("display").innerHTML = minusResult;
+	localStorage.setItem("Result", JSON.stringify(Number(firstInput.value) + " - " + Number(secondInput.value) + " = " + minusResult));
+	document.getElementById("historyOperations").innerHTML += localStorage.getItem("Result") + "<br>" ;
+
 };
 
 
@@ -72,7 +75,9 @@ function multiplyFunction(){
 
 	var multiplyResult = Number(firstInput.value) * Number(secondInput.value);
 	document.getElementById("display").innerHTML = multiplyResult;
-		
+	localStorage.setItem("Result", JSON.stringify(Number(firstInput.value) + " * " + Number(secondInput.value) + " = " + multiplyResult));	
+	document.getElementById("historyOperations").innerHTML += localStorage.getItem("Result") + "<br>" ;
+
 };
 
 
@@ -82,10 +87,14 @@ function divideFunction(){
 
 	var divideResult = Number(firstInput.value) / Number(secondInput.value);
 	document.getElementById("display").innerHTML = divideResult;
+	localStorage.setItem("Result", JSON.stringify(Number(firstInput.value) + " / " + Number(secondInput.value) + " = " + divideResult));
+	document.getElementById("historyOperations").innerHTML += localStorage.getItem("Result") + "<br>" ;
 };
 
 
-	
+
+
+
 
 
 
