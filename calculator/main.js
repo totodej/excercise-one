@@ -11,7 +11,6 @@ var minus = document.getElementById("minus");
 var multiply = document.getElementById("multiply");
 var divide = document.getElementById("divide");
 
-var date = new Date();
 
 /******************** VALIDATION ********************/
 
@@ -55,9 +54,11 @@ document.getElementById("plus").addEventListener("click", plusFunction);
 
 function plusFunction(){
 
+	var date = new Date();
 	var plusResult = Number(firstInput.value) + Number(secondInput.value);
-	document.getElementById("display").innerHTML = plusResult;
-	localStorage.setItem("Result", JSON.stringify(Number(firstInput.value) + " + " + Number(secondInput.value) + " = " + plusResult));
+	var plusResultDecimal = plusResult.toFixed(2);
+	document.getElementById("display").innerHTML = plusResultDecimal;
+	localStorage.setItem("Result", JSON.stringify(Number(firstInput.value) + " + " + Number(secondInput.value) + " = " + plusResultDecimal));
 	document.getElementById("operationsHistory").innerHTML += "<br>" + localStorage.getItem("Result") + "<br>" + date.toLocaleDateString() + " - " + date.toLocaleTimeString() + "<br><br>" ;
 };
 
@@ -66,9 +67,11 @@ document.getElementById("minus").addEventListener("click", minusFunction);
 
 function minusFunction(){
 
+	var date = new Date();
 	var minusResult = Number(firstInput.value) - Number(secondInput.value);
-	document.getElementById("display").innerHTML = minusResult;
-	localStorage.setItem("Result", JSON.stringify(Number(firstInput.value) + " - " + Number(secondInput.value) + " = " + minusResult));
+	var minusResultDecimal = minusResult.toFixed(2);
+	document.getElementById("display").innerHTML = minusResultDecimal;
+	localStorage.setItem("Result", JSON.stringify(Number(firstInput.value) + " - " + Number(secondInput.value) + " = " + minusResultDecimal));
 	document.getElementById("operationsHistory").innerHTML +=  "<br>" + localStorage.getItem("Result") + "<br>" + date.toLocaleDateString() + " - " + date.toLocaleTimeString() + "<br><br>" ;
 
 };
@@ -78,9 +81,11 @@ document.getElementById("multiply").addEventListener("click", multiplyFunction);
 
 function multiplyFunction(){
 
+	var date = new Date();
 	var multiplyResult = Number(firstInput.value) * Number(secondInput.value);
+	var multiplyResultDecimal = multiplyResult.toFixed(2);
 	document.getElementById("display").innerHTML = multiplyResult;
-	localStorage.setItem("Result", JSON.stringify(Number(firstInput.value) + " * " + Number(secondInput.value) + " = " + multiplyResult));	
+	localStorage.setItem("Result", JSON.stringify(Number(firstInput.value) + " * " + Number(secondInput.value) + " = " + multiplyResultDecimal));	
 	document.getElementById("operationsHistory").innerHTML +=  "<br>" + localStorage.getItem("Result") + "<br>" + date.toLocaleDateString() + " - " + date.toLocaleTimeString() + "<br><br>" ;
 
 };
@@ -90,21 +95,35 @@ document.getElementById("divide").addEventListener("click", divideFunction);
 	
 function divideFunction(){
 
+	var date = new Date();
 	var divideResult = Number(firstInput.value) / Number(secondInput.value);
-	document.getElementById("display").innerHTML = divideResult;
-	localStorage.setItem("Result", JSON.stringify(Number(firstInput.value) + " / " + Number(secondInput.value) + " = " + divideResult));
+	var divideResultDecimal = divideResult.toFixed(2);
+	document.getElementById("display").innerHTML = divideResultDecimal;
+	localStorage.setItem("Result", JSON.stringify(Number(firstInput.value) + " / " + Number(secondInput.value) + " = " + divideResultDecimal));
 	document.getElementById("operationsHistory").innerHTML +=  "<br>" + localStorage.getItem("Result") + "<br>" + date.toLocaleDateString() + " - " + date.toLocaleTimeString() + "<br><br>" ;
 };
 
-/******************** CLEAR ********************/
+/******************** REFRESH ********************/
 
-document.getElementById("clear").addEventListener("click", clear);
+document.getElementById("refreshFields").addEventListener("click", refreshFields);
 
-function clear(){
+function refreshFields(){
 
-	window.location.reload(false);
+	document.getElementById("firstInput").value = "";
+	document.getElementById("secondInput").value = "";
+	document.getElementById("display").innerHTML = "";
+
 	localStorage.removeItem("Result");
 }
+
+document.getElementById("refreshOpeHistory").addEventListener("click", refreshOpeHistory);
+
+function refreshOpeHistory(){
+
+	var idHistory = document.getElementById("operationsHistory");
+	idHistory.innerHTML = "";
+}
+
 
 
 
