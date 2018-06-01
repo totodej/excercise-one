@@ -112,6 +112,8 @@ function refreshFields(){
 	document.getElementById("firstInput").value = "";
 	document.getElementById("secondInput").value = "";
 	document.getElementById("display").innerHTML = "";
+	missFirstField.style.display = "none";
+	missSecondField.style.display = "none";
 
 	localStorage.removeItem("Result");
 }
