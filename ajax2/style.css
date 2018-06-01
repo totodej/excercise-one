@@ -1,0 +1,32 @@
+body{
+	text-align: center;
+	background-color: #FFC312;
+	font-family: 'Graduate', cursive;
+
+}
+
+h1 {
+	text-align : center;
+	font-size: 50px
+}
+
+#display {
+	padding : 20px;
+}
+
+#image {
+	margin: auto;
+	border:solid 10px black;
+	border-radius: 20px;
+}
+
+button {
+	margin-top: 20px;
+	margin-bottom: 20px;
+	border: solid 5px black;
+	border-radius: 10px;
+	width: 120px;
+    height: 50px;
+    font-family: 'Graduate', cursive;
+    font-size:30px;
+}
