@@ -10,6 +10,17 @@ h1 {
 	font-size: 50px
 }
 
+table, td, th {
+	border : 2px solid black;
+	border-collapse: collapse;
+	padding: 20px;
+	margin: auto;
+	width: 100%;
+	table-layout: fixed;
+	word-wrap: break-word;
+
+}
+
 #display {
 	padding : 20px;
 }
