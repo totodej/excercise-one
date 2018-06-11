@@ -25,10 +25,10 @@
 
 				for(var i = 0 ; i < members.length ; i++){
 
-					 	obj += "<tr><td>" + members[i].user.avatar + "</td><td>" + members[i].user.avatar_thumbnail 
-					 	+ "</td><td>" + members[i].user.class + "</td><td>" + members[i].user.first_name + "</td><td>" + 
-					 	members[i].user.id + "</td><td>" + members[i].user.last_name + "</td><td>" + members[i].user.page + "</td><td>" 
-					 	+ members[i].user.slug + "</td><td>" + members[i].user.uri + "</td></tr>";
+					 	obj += "<tr><td><img src='" + members[i].user.avatar + "'></td><td><img src='" + members[i].user.avatar_thumbnail 
+					 	+ "'></td><td>" + members[i].user.class + "</td><td>" + members[i].user.first_name + "</td><td>" + 
+					 	members[i].user.id + "</td><td>" + members[i].user.last_name + "</td><td><a href='" + members[i].user.page + "'>Link</a></td><td>" 
+					 	+ members[i].user.slug + "</td><td><a href='" + members[i].user.uri + "'>Uri</a></td></tr>";
 					 	
 				}
 
@@ -44,7 +44,6 @@
 				localStorage.setItem("data-gouv",xhttp.responseText);
 				
 				
-
 				
 			};
 		};

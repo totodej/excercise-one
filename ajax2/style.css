@@ -41,3 +41,11 @@ button {
     font-family: 'Graduate', cursive;
     font-size:30px;
 }
+
+td img {
+	width : 100%;
+}
+
+a{
+	color : blue;
+}
