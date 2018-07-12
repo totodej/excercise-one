@@ -23,12 +23,16 @@ table, td, th {
 
 #display {
 	padding : 20px;
+	display : block;
+	border : solid 10px black;
+	border-radius: 20px;
 }
 
 #image {
 	margin: auto;
 	border:solid 10px black;
 	border-radius: 20px;
+	display : block;
 }
 
 button {
