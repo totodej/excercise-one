@@ -9,16 +9,40 @@ h1 {
 	text-align : center;
 	font-size: 50px
 }
-
-table, td, th {
-	border : 2px solid black;
-	border-collapse: collapse;
-	padding: 20px;
-	margin: auto;
+.divTable{
+	display : table;
 	width: 100%;
-	table-layout: fixed;
-	word-wrap: break-word;
 
+}
+
+.divTableHead{
+	display : table-cell;
+	padding : 3px 10px;
+}
+
+.divTableCell{
+	display : table-cell;
+	padding : 3px 10px;
+}
+
+.divTableCell img{
+	width : 10%;
+}
+
+.divTableHeading{
+	display: table-header-group;
+}
+
+.divTableRow{
+	display : table-row;
+}
+
+.divTable , .divTableHead , .divTableCell{
+	border : 2px solid black;
+}
+
+#tbody {
+	display: table-row-group;
 }
 
 #display {
@@ -46,10 +70,8 @@ button {
     font-size:30px;
 }
 
-td img {
-	width : 100%;
-}
-
 a{
 	color : blue;
 }
+
+

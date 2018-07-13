@@ -65,10 +65,8 @@ function saveResponse(response){
 
 function renderMember(user){
 
-	user = "<tr><td><img src='" + user.avatar + "'></td><td><img src='" + user.avatar_thumbnail 
-	+ "'></td><td>" + user.class + "</td><td>" + user.first_name + "</td><td>" + 
-	user.id + "</td><td>" + user.last_name + "</td><td><a href='" + user.page + "'><i class='fas fa-link'></i></a></td><td>" 
-	+ user.slug + "</td><td><a href='" + user.uri + "'>Uri</a></td></tr>";
+	user = "<div class='divTableRow'><div class='divTableCell'><img src='" + user.avatar + "'></div><div class='divTableCell'>" + 
+	user.id + "</div><div class='divTableCell'>" + user.first_name + "</div><div class='divTableCell'>" + user.last_name + "</div><div class='divTableCell'><a href='" + user.page + "'><i class='fas fa-link'></i></a></div></div>";
 
 	return user;
 };
