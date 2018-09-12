@@ -1,77 +1,233 @@
-body{
+body {
 	text-align: center;
-	background-color: #FFC312;
-	font-family: 'Graduate', cursive;
+	margin : auto;
+	background-color: #1e90ff;
+}
 
+#header {
+	background-color: #f2f2f2;
+	display : flex;
 }
 
 h1 {
-	text-align : center;
-	font-size: 50px
+	font-size: 50px;
+	color : #79d5ff;
+	text-shadow: #3742fa 1px 1px, #3742fa -1px 1px, #3742fa -1px -1px, #3742fa 1px -1px;
+	text-align : left;
+	font-family: 'Graduate', cursive;
+	margin-left: 102px;
+	margin-top : 48px;
+
 }
-.divTable{
-	display : table;
+
+#tbody{
+	display : flex;
+	flex-wrap: wrap;
 	width: 100%;
-
+	margin : auto;
 }
 
-.divTableHead{
-	display : table-cell;
-	padding : 3px 10px;
-}
-
-.divTableCell{
-	display : table-cell;
-	padding : 3px 10px;
-}
-
-.divTableCell img{
-	width : 10%;
-}
-
-.divTableHeading{
-	display: table-header-group;
-}
-
-.divTableRow{
-	display : table-row;
-}
-
-.divTable , .divTableHead , .divTableCell{
-	border : 2px solid black;
-}
-
-#tbody {
-	display: table-row-group;
-}
-
-#display {
+.user {
 	padding : 20px;
-	display : block;
+	width : 255px;
+	margin : 30px;
+	height: 350px;
+	background-color: #f2f2f2;
+}
+
+#picture img{
+	width : 50%;
+	border-radius : 100px;
+    height: 125px;
+    margin: 10px;
+    background-color: #1e90ff;
+}
+
+.loader {
+	margin: auto;
 	border : solid 10px black;
 	border-radius: 20px;
-}
-
-#image {
-	margin: auto;
-	border:solid 10px black;
-	border-radius: 20px;
 	display : block;
 }
 
-button {
-	margin-top: 20px;
-	margin-bottom: 20px;
-	border: solid 5px black;
-	border-radius: 10px;
-	width: 120px;
-    height: 50px;
+.informations{
+	height : 130px;
+	padding : 5px;
+	text-align : left;
+	width : 96%;
+	display : inline-block;
+	font-size: 17px;
+}
+
+.informations > p{
+	font-size : 15px;
+	font-weight: bold;
+	color :#737373;
+	font-family: 'Open Sans', sans-serif;
+	text-decoration: underline;
+	text-decoration-color: #79d5ff;
+}
+
+.details {
+	border: solid 3px #3742fa;
+	color : white;
+	width: 140px;
+    height: 40px;
     font-family: 'Graduate', cursive;
-    font-size:30px;
+    font-size: 15px;
+    background-color: #79d5ff;
+    margin-top: 20px;
+}
+
+.image-placeholder {
+    background-color: #eee;
+    display: flex;
+    height: 180px;
+    margin: 5px;
+    width: 260px;
+}
+
+
+#show {
+	margin-top: 59px;
+	margin-bottom: 50px;
+	margin-left : 574px;
+	border: solid 3px #3742fa;
+	color : white;
+	width: 140px;
+    height: 40px;
+    font-family: 'Graduate', cursive;
+    font-size: 15px;
+    background-color: #79d5ff;
 }
 
 a{
-	color : blue;
+	color : #737373;
+	word-wrap: break-word;
+	font-family: 'Open Sans', sans-serif;
+	font-weight : bold;
+	font-size: 15px;
+	text-decoration: underline;
+	text-decoration-color: #79d5ff;
 }
 
+@media only screen and (max-width: 480px) {
+	
+	h1{
+		display : block;
+		text-align : center;
+		margin-left: 0px;
+		margin : auto;
+	}
+
+	.user{
+		margin : auto;
+		margin-top: 40px;
+	}
+
+	button{
+		margin-left : 0px;
+		margin : auto;
+	}
+
+	#loader {
+		margin: auto;
+		border : solid 10px black;
+		border-radius: 20px;
+		display : block;
+		width : 80%;
+	}
+
+
+}
+
+@media only screen and (min-width: 480px) and (max-width: 630px) {
+	
+	h1{
+		display : block;
+		text-align : center;
+		margin-left: 0px;
+		margin : auto;
+	}
+
+	.user{
+		margin-left: 135px;
+	}
+
+	button{
+		margin-left : 0px;
+		margin : auto;
+	}
+
+	#loader {
+		margin: auto;
+		border : solid 10px black;
+		border-radius: 20px;
+		display : block;
+		width : 80%;
+	}
+
+}
+
+@media only screen and (min-width: 630px) and (max-width: 805px) {
+
+	.user{
+		margin-left: 230px;
+	}
+
+	button{
+		margin-left : 135px;
+	}
+
+}
+
+@media only screen and (min-width: 805px) and (max-width: 945px) {
+	
+	.user{
+		margin-left: 70px;
+	}
+	
+	button{
+		margin-left : 315px;
+	}
+	
+}
+
+@media only screen and (min-width: 945px) and (max-width: 1110px) {
+
+	.user{
+		margin-left: 140px;
+	}
+
+	button{
+		margin-left : 465px;
+	}
+}
+
+@media only screen and (min-width: 1110px) and (max-width: 1185px) {
+
+	.user{
+		margin-left: 40px;
+	}
+
+	
+}
+
+@media only screen and (min-width: 1185px) and (max-width: 1290px) {
+
+	.user{
+		margin-left: 65px;
+	}
+
+	
+}
+
+@media only screen and (min-width: 1290px) and (max-width: 1435px) {
+
+	.user{
+		margin-left: 100px;
+	}
+
+	
+}
 
