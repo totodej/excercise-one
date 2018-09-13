@@ -55,7 +55,6 @@ function showResult(){
 	};
 	xhttp.open("GET", "https://api.github.com/users", true);
 	xhttp.send();
-
 };
 
 function clearTable(){
@@ -75,8 +74,6 @@ function renderMember(user){
 
 	return user;
 };
-
-
 
 
 function fetchAndRenderUserDetails(login){
